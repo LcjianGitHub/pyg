@@ -5,4 +5,5 @@
     <select id="queryAll" resultType="com.pinyougou.pojo.TbBrand">
         SELECT * FROM tb_brand
     </select>
+
 </mapper>

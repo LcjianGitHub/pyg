@@ -13,12 +13,19 @@ import java.util.List;
 @RestController
 public class BrandController {
 
-    @Reference(timeout = 10000)
+    @Reference//(timeout = 10000)
     private BrandService brandService;
+
+    @GetMapping("/testPage")
+    public List<TbBrand> testPage(Integer page,Integer rows){
+//        return brandService.testPage(page,rows);
+        return (List<TbBrand>) brandService.findPage(page,rows).getRows();
+    }
 
     @GetMapping("/findAll")
     public List<TbBrand> queryAll() {
-        return brandService.queryAll();
+//        return brandService.queryAll();
+        return brandService.findAll();
     }
 }
 
