@@ -13,6 +13,7 @@
         <module>pinyougou-dao</module>
         <module>pinyougou-sellergoods</module>
         <module>pinyougou-manage-web</module>
+        <module>lcjian-jsp</module>
     </modules>
     <packaging>pom</packaging>
 
